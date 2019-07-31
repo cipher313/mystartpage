@@ -1,34 +1,88 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>My very first page</title>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <style>
-      h1 {text-align:center;}
-      ul {
-        display: table;
-        margin-left: auto;
-        margin-right: auto;
-      }
-    </style>
-  </head>
-  <body>
-    <div>
-     <h1>Code States</h1>
-    </div>
-    <ul>
-      <li>Slack (코드스테이츠 메신저(?))<br><a href="http://codestates-pre.slack.com/" target=_blank>http://codestates-pre.slack.com/</a></li><br>
-      <li>소크레이티브 (라이브 세션 중 문답)<br><a href="http://b.socrative.com" target=_blank>http://b.socrative.com</a></li><br>
-      <li>런코 (강의 목록)<br><a href="https://learnco.codestates.com/Pre/35/" target=_blank>https://learnco.codestates.com/Pre/35/</a></li><br>
-      <li>코플릿 (퀴즈)<br><a href="https://coplit.codestates.com/" target=_blank>https://coplit.codestates.com/</a></li><br>
-      <li>깃허브 코드스테이츠 헬프데스크 (수강생끼리 Q&A)<br><a href="https://github.com/codestates/pre-help-desk" target=_blank>https://github.com/codestates/pre-help-desk</a></li><br>
-      <li>깃허브 코드스테이츠 Finding Pair<br><a href="https://github.com/codestates/pre-finding-pair" target=_blank>https://github.com/codestates/pre-finding-pair</a></li><br>
-      <li>Zoom<br><a href="https://zoom.us/" target=_blank>https://zoom.us/</a></li>
-    </ul>
-      <h1>Reference</h1>
-    <ul>
-      <li>MDN : <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference" target=_blank>https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference</a></li><br>
-      <li>W3schools : <a href="https://www.w3schools.com/jsref/jsref_obj_array.asp" target=_blank>https://www.w3schools.com/jsref/jsref_obj_array.asp</a></li><br>
-      <li>CODING FACTORY : <a href="https://www.codingfactory.net/" target=_blank>https://www.codingfactory.net/</a></li>
-    </ul>
-  </body>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Startpage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <base target="_blank">
+</head>
+
+<body>
+    <main>
+        <div id="top-div">
+            <div id="clock-div">
+                <h1 id="clock"></h1>
+            </div>
+            <form id="search-form" action="https://duckduckgo.com">
+                <div id="search-bar-wrapper">
+                    <input id="search-bar" name="q" type="text" title="Search" />
+                    <button id="search-bar-btn" type="submit">&#128270;</button>
+                </div>
+            </form>
+        </div>
+        <div id="links-container">
+            <section class="link-section">
+                <span class="link-section-title red">Code State 1</span>
+                <hr />
+                <ul class="link-list">
+                    <li class="link-list-item"><a class="link" href="http://codestates-pre.slack.com/">Slack</a></li>
+                    <li class="link-list-item"><a class="link" href="http://b.socrative.com">Socrative</a></li>
+                    <li class="link-list-item"><a class="link" href="https://learnco.codestates.com/Pre/35/">Learnco</a></li>
+                    <li class="link-list-item"><a class="link" href="https://coplit.codestates.com/">Coplit</a></li>
+                    <!-- <li class="link-list-item"><a class="link" href="#">Website 5</a></li> -->
+                </ul>
+            </section>
+            <section class="link-section">
+                <span class="link-section-title blue">Code State 2</span>
+                <hr />
+                <ul class="link-list">
+                    <li class="link-list-item"><a class="link" href="https://github.com/codestates/pre-help-desk">Github - Helpdesk</a></li>
+                    <li class="link-list-item"><a class="link" href="https://github.com/codestates/pre-finding-pair">Github - Finding Pair</a></li>
+                    <li class="link-list-item"><a class="link" href="https://zoom.us/">Zoom</a></li>
+                    <!-- <li class="link-list-item"><a class="link" href="#">Website 4</a></li>
+                    <li class="link-list-item"><a class="link" href="#">Website 5</a></li> -->
+                </ul>
+            </section>
+            <section class="link-section">
+                <span class="link-section-title green">MDN</span>
+                <hr />
+                <ul class="link-list">
+                    <li class="link-list-item"><a class="link" href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/String">MDN - String</a></li>
+                    <li class="link-list-item"><a class="link" href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Number">MDN - Number</a></li>
+                    <li class="link-list-item"><a class="link" href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array">MDN - Array</a></li>
+                    <li class="link-list-item"><a class="link" href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Math">MDN - Math</a></li>
+                    <li class="link-list-item"><a class="link" href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object">MDN - Object</a></li>
+                </ul>
+            </section>
+            <section class="link-section">
+                <span class="link-section-title purple">Reference</span>
+                <hr />
+                <ul class="link-list">
+                    <li class="link-list-item"><a class="link" href="https://www.w3schools.com/jsref/jsref_obj_array.asp">W3schools</a></li>
+                    <li class="link-list-item"><a class="link" href="https://www.codingfactory.net/">CODING FACTORY</a></li>
+                    <!-- <li class="link-list-item"><a class="link" href="#">Website 3</a></li>
+                    <li class="link-list-item"><a class="link" href="#">Website 4</a></li>
+                    <li class="link-list-item"><a class="link" href="#">Website 5</a></li> -->
+                </ul>
+            </section>
+        </div>
+    </main>
+    <br><br>
+    <!-- <footer>
+      <div id = "footer">
+        This Page is based on https://github.com/pedro-pablo/minimal-startpage-template
+      </div>
+    </footer> -->
+    <noscript>
+        <style>
+            #clock {
+                display: none;
+            }
+        </style>
+    </noscript>
+    <script src="js/main.js"></script>
+</body>
+
 </html>
